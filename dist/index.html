@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="static/css/styles.css">
+    <link rel="stylesheet" href="static/css/plugins.min.css">
+    <link rel="stylesheet" href="static/css/media.css">
+    
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+
+
+    <header>
+        <div class="container">
+            <div class="top">
+                <a href="index.html" class="logo top_logo">Nesto</a>
+                <nav class="top_menu">
+                    <ul>
+                        <li><a class="menu_link white" href="favourites.html">Избранное</a></li>
+                        <li><a class="menu_link white" href="be_driver.html">Стать водителем</a></li>
+                        <li>
+                            <a class="menu_link white open_dropdown"> <span>О сервисе</span> <span class="icon-angle-down"></span>
+                                <ul class="dropdown">
+                                    <li><a class="menu_link" href="about.html">О Nesto</a></li>
+                                    <li><a class="menu_link" href="info.html">Условия пользования</a></li>
+                                    <li><a class="menu_link" href="faq.html">FAQ</a></li>
+                                    <li><a class="menu_link" href="contacts.html">Контакты</a></li>
+                                </ul>
+                            </a>
+                        </li>
+                    </ul>
+                    
+                </nav>
+                <div class="menu-icon">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+                <div class="close-menu"></div>
+                <div id="bookmark-total">
+                    <i class="icon-bookmark-empty"></i>
+                    <span>4</span>
+                </div>
+                <div class="mobile-footer">
+                    <div class="social-links">
+                        <a href=""><img src="static/img/icons/fb-white.png" alt=""></a>
+                        <a href=""><img src="static/img/icons/vk-white.png" alt=""></a>
+                        <a href=""><img src="static/img/icons/insta-white.png" alt=""></a>
+                    </div>
+                    <a class="support-link" href="">Служба клиенской поддержки</a>
+                    <div class="copyright">
+                        <p>Nesto 2017</p>
+                        <div class="lang">
+                            <a class="lang-link">Русский<i class="icon-angle-down"></i></a>
+                            <div class="dropdown-lang">
+                                <a href="">English</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h1>Бронируйте премиум авто с водителем для важных мероприятий</h1>
+            
+            <div id="search">
+                <form action="">
+
+                    <div class="form_row">
+                        <div class="pick-city">
+                            <i class="icon-angle-down"></i>
+                            <label class="icon_1" for="city"></label>
+                            <input type="text" id="city" class="city" placeholder="&#x413;&#x43E;&#x440;&#x43E;&#x434;" value="&#x410;&#x43B;&#x43C;&#x430;&#x442;&#x44B;" autocomplete="off">
+                        </div>
+                        <div class="select-city">
+                            <ul>
+                                <li>Алматы</li>
+                                <li>Астана</li>
+                                <li>Карагнада</li>
+                                <li>Усть-Каменогорск</li>
+                                <li>Шымкент</li>
+                                <li>Атырау</li>
+                                <li>Актау</li>
+                                <li>Павлодар</li>
+                                <li>Тараз</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="form_row pick-date">
+                        <i class="icon-angle-down"></i>
+                        <label class="icon_2" for="date"></label>
+                        <input type="text" id="date" class="date" placeholder="&#x414;&#x430;&#x442;&#x430;" autocomplete="off">
+                    </div>
+                    <div class="form_row">
+                        <div class="timepick_open">
+                            <i class="icon-angle-down"></i>
+                            <label class="icon_3" for="time"></label>
+                            <input type="text" id="time" class="time" placeholder="&#x41F;&#x435;&#x440;&#x438;&#x43E;&#x434; &#x432;&#x440;&#x435;&#x43C;&#x435;&#x43D;&#x438;" autocomplete="off">
+                        </div>
+                        <div class="time_row">
+                            <input type="text" class="start" id="start" autocomplete="off">
+                            <input type="text" class="end" id="end" autocomplete="off">
+                        </div>
+                        
+                        <!-- DROPDOWN TIME -->
+                        <div class="timepick">
+                            <div class="time_start">
+                                <ul class="time-list">
+                                    <li>Начало</li>
+                                    <li>10:00</li>
+                                    <li>10:30</li>
+                                    <li>11:00</li>
+                                    <li>11:30</li>
+                                    <li>12:00</li>
+                                    <li>12:30</li>
+                                    <li>13:00</li>
+                                    <li>13:30</li>
+                                    <li>14:00</li>
+                                </ul>
+                            </div>
+                            <div class="time_end">
+                                <ul class="time-list">
+                                    <li>Конец</li>
+                                    <li>10:30</li>
+                                    <li>11:00</li>
+                                    <li>11:30</li>
+                                    <li>12:00</li>
+                                    <li>12:30</li>
+                                    <li>13:00</li>
+                                    <li>13:30</li>
+                                    <li>14:00</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- END -->
+                    </div>
+                    
+                    <button type="submit" class="submit">Искать</button>
+                </form>
+            </div>
+        </div>
+    </header>
+
+    <div id="main_page" class="content">
+        <h3 class="title">Лучшие предложения</h3>
+        <div class="container catalog">
+           
+            <div class="item">
+                <span class="icon-bookmark-empty"></span>
+                <a href="catalog.html">
+                    <figure>
+                        <div class="img-container">
+                            <img src="static/img/cars/1.png" alt="car">
+                            <div class="cost">4000 тг</div>
+                        </div>
+                        
+                        
+                        <figcaption>Mercedes Benz Gelandewagen 2016 </figcaption>
+                        <p>Алматы</p>
+                    </figure>
+                </a>
+            </div>
+            <div class="item">
+                <span class="icon-bookmark-empty"></span>
+                <a href="catalog.html">
+                    <figure>
+                        <div class="img-container">
+                            <img src="static/img/cars/2.png" alt="car">
+                            <div class="cost">4000 тг</div>
+                        </div>
+                        
+                        <figcaption>Mercedes Benz Gelandewagen 2016 </figcaption>
+                        <p>Алматы</p>
+                    </figure>
+                </a>
+            </div>
+            <div class="item">
+                <a href="#">
+                    <figure>
+                        <div class="img-container">
+                            <img src="static/img/cars/3.png" alt="car">
+                            <div class="cost">4000 тг</div>
+                        </div>
+                        <figcaption>Mercedes Benz Gelandewagen 2016 </figcaption>
+                        <p>Алматы</p>
+                    </figure>
+                </a>
+            </div>
+            <div class="item">
+                <a href="#">
+                    <figure>
+                        <div class="img-container">
+                            <img src="static/img/cars/4.png" alt="car">
+                            <div class="cost">4000 тг</div>
+                        </div>
+                        <figcaption>Mercedes Benz Gelandewagen 2016 </figcaption>
+                        <p>Алматы</p>
+                    </figure>
+                </a>
+            </div>
+            <div class="item">
+                <a href="#">
+                    <figure>
+                        <div class="img-container">
+                            <img src="static/img/cars/4.png" alt="car">
+                            <div class="cost">4000 тг</div>
+                        </div>
+                        <figcaption>Mercedes Benz Gelandewagen 2016 </figcaption>
+                        <p>Алматы</p>
+                    </figure>
+                </a>
+            </div>
+            <div class="item">
+                <a href="#">
+                    
+                    <figure>
+                        <div class="img-container">
+                            <img src="static/img/cars/1.png" alt="car">
+                            <div class="cost">4000 тг</div>
+                        </div>
+                        <figcaption>Mercedes Benz Gelandewagen 2016 </figcaption>
+                        <p>Алматы</p>
+                    </figure>
+                </a>
+            </div>
+            <div class="item">
+                <a href="#">
+                    <figure>
+                        <div class="img-container">
+                            <img src="static/img/cars/3.png" alt="car">
+                            <div class="cost">4000 тг</div>
+                        </div>
+                        <figcaption>Mercedes Benz Gelandewagen 2016 </figcaption>
+                        <p>Алматы</p>
+                    </figure>
+                </a>
+            </div>
+            <div class="item">
+                <a href="#">
+                    <figure>
+                        <div class="img-container">
+                            <img src="static/img/cars/2.png" alt="car">
+                            <div class="cost">4000 тг</div>
+                        </div>
+                        <figcaption>Mercedes Benz Gelandewagen 2016 </figcaption>
+                        <p>Алматы</p>
+                    </figure>
+                </a>
+            </div>
+            
+        </div>
+        
+        <div class="block_info">
+            <div class="container">
+                <div class="header-text">
+                    <p class="h2">Все любимые машины в одном месте!</p>
+                    <p class="h2">Больше не нужно бесконечно обзванивать агенства.</p>
+                   
+                </div>
+                
+                <div class="text">
+                    <div class="col">
+                        <h4>Машины премиум класса</h4>
+                        <p>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Предложения пунктуация жизни вопрос наш переписывается если силуэт власти ты, до что города вершину правилами эта там, буквоград живет залетают.</p>
+                    </div>
+                    <div class="col">
+                        <h4>Доступная цена</h4>
+                        <p>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Предложения пунктуация жизни вопрос наш переписывается если силуэт власти ты, до что города вершину правилами эта там, буквоград живет залетают.</p>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        
+        <div class="content content_block">
+            <div class="slider container">
+                <h3>Горячие предложения</h3>
+                <!-- Slider main container -->
+                <div class="swiper-container catalog">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            <div class="item">
+                                <span class="icon-bookmark-empty"></span>
+                                <a href="#">
+                                    <figure>
+                                        <div class="img-container">
+                                            <img src="static/img/cars/4.png" alt="car">
+                                            <div class="cost">4000 тг</div>
+                                        </div>
+                                        <figcaption>Mercedes Benz Gelandewagen 2016 </figcaption>
+                                        <p>Алматы</p>
+                                    </figure>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="item">
+                                <span class="icon-bookmark-empty"></span>
+                                <a href="#">
+                                    <figure>
+                                        <div class="img-container">
+                                            <img src="static/img/cars/3.png" alt="car">
+                                            <div class="cost">4000 тг</div>
+                                        </div>
+                                        <figcaption>Mercedes Benz Gelandewagen 2016 </figcaption>
+                                        <p>Алматы</p>
+                                    </figure>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="item">
+                                <span class="icon-bookmark-empty"></span>
+                                <a href="#">
+                                    <figure>
+                                        <div class="img-container">
+                                            <img src="static/img/cars/2.png" alt="car">
+                                            <div class="cost">4000 тг</div>
+                                        </div>
+                                        <figcaption>Mercedes Benz Gelandewagen 2016 </figcaption>
+                                        <p>Алматы</p>
+                                    </figure>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="item">
+                                <span class="icon-bookmark-empty"></span>
+                                <a href="#">
+                                    <figure>
+                                        <div class="img-container">
+                                            <img src="static/img/cars/4.png" alt="car">
+                                            <div class="cost">4000 тг</div>
+                                        </div>
+                                        <figcaption>Mercedes Benz Gelandewagen 2016 </figcaption>
+                                        <p>Алматы</p>
+                                    </figure>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="item">
+                                <span class="icon-bookmark-empty"></span>
+                                <a href="#">
+                                    <figure>
+                                        <div class="img-container">
+                                            <img src="static/img/cars/1.png" alt="car">
+                                            <div class="cost">4000 тг</div>
+                                        </div>
+                                        <figcaption>Mercedes Benz Gelandewagen 2016 </figcaption>
+                                        <p>Алматы</p>
+                                    </figure>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="item">
+                                <span class="icon-bookmark-empty"></span>
+                                <a href="#">
+                                    <figure>
+                                        <div class="img-container">
+                                            <img src="static/img/cars/1.png" alt="car">
+                                            <div class="cost">4000 тг</div>
+                                        </div>
+                                        <figcaption>Mercedes Benz Gelandewagen 2016 </figcaption>
+                                        <p>Алматы</p>
+                                    </figure>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="item">
+                                <span class="icon-bookmark-empty"></span>
+                                <a href="#">
+                                    <figure>
+                                        <div class="img-container">
+                                            <img src="static/img/cars/1.png" alt="car">
+                                            <div class="cost">4000 тг</div>
+                                        </div>
+                                        <figcaption>Mercedes Benz Gelandewagen 2016 </figcaption>
+                                        <p>Алматы</p>
+                                    </figure>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="item">
+                                <span class="icon-bookmark-empty"></span>
+                                <a href="#">
+                                    <figure>
+                                        <div class="img-container">
+                                            <img src="static/img/cars/1.png" alt="car">
+                                            <div class="cost">4000 тг</div>
+                                        </div>
+                                        <figcaption>Mercedes Benz Gelandewagen 2016 </figcaption>
+                                        <p>Алматы</p>
+                                    </figure>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev swiper-button-black"></div>
+                <div class="swiper-button-next swiper-button-black"></div>
+            </div>
+            <div class="about-work container">
+                <h3>Как работает Nesto</h3>
+            </div>
+            
+            <div id="draggable" class="container item-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="item-work">
+                            <div class="icon-work"></div>
+                            <h5>Указывайте город, дату и переод времени для вашей поездке</h5>
+                            <p>Lorem ipsum dolor sit amet,ctetur adipiscing elit. </p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="item-work">
+                            <div class="icon-work item-work_2"></div>
+                            <h5>Выбирайте понравившиеся авто</h5>
+                            <p>Lorem ipsum dolor sit amet,ctetur adipiscing elit. </p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="item-work">
+                            <div class="icon-work item-work_3"></div>
+                            <h5>Бронируйте и оплавчивайте</h5>
+                            <p>Lorem ipsum dolor sit amet,ctetur adipiscing elit. </p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="item-work">
+                            <div class="icon-work item-work_4"></div>
+                            <h5>В указонное время прибудет водитель на машине</h5>
+                            <p>Lorem ipsum dolor sit amet,ctetur adipiscing elit. </p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="item-work">
+                            <div class="icon-work item-work_5"></div>
+                            <h5>Наслождайтесь поездкой </h5>
+                            <p>Lorem ipsum dolor sit amet,ctetur adipiscing elit. </p>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        
+        
+        <div class="video">
+            <h2>Nesto глазами пользователя</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            <a id="video-main-page" href="https://www.youtube.com/embed/qtQgbdmIO30?autoplay=true" class="play-btn"><span class="play-icon"></span><span>Смотреть видео</span></a>
+        </div>
+
+        <div class="block_info driver content">
+            <div class="container">
+                <div class="header-text">
+                    <p class="h2">Обеспечь стабильный доход на собственной машине!</p>
+                    <a href="#" class="btn btn-red">Стать водителем</a>
+                </div>
+
+                <div class="text">
+                    <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. </h4>
+                    <p>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Предложения пунктуация жизни вопрос наш переписывается если силуэт власти ты, до что города вершину правилами эта там, буквоград живет залетают.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-nav">
+                <div class="nav-col">
+                    <a class="menu_link" href="#">О Nesto</a>
+                    <a class="menu_link" href="#">Команда</a>
+                    <a class="menu_link" href="#">Условия пользования</a>
+                    <a class="menu_link" href="#">Политика конфиденциальности</a>
+                </div>
+                <div class="nav-col">
+                    <p>Сервис</p>
+                    <a href="">Заказать автомобиль</a>
+                    <a href="">Стать водителем</a>
+                </div>
+                <div class="nav-col">
+                    <p>Помощь</p>
+                    <a href="">Как работает Nesto</a>
+                    <a href="">Центр помощи</a>
+                    <a href="">FAQ</a>
+                </div>
+                <div class="nav-col">
+                    <p>Свяжитесь с нами</p>
+                    <div class="social">
+                        <a href=""><img src="static/img/icons/fb.png" alt="fb"></a>
+                        <a href=""><img src="static/img/icons/vk.png" alt="vk"></a>
+                        <a href=""><img src="static/img/icons/insta.png" alt="insta"></a>
+                    </div>
+                    <a class="support-link" href="">Служба клиенской поддержки</a>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>Nesto 2017</p>
+                <div class="lang">
+                    <a class="lang-link">Русский<i class="icon-angle-down"></i></a>
+                    <div class="dropdown-lang">
+                        <a href="">English</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    
+    <!-- PLUGINS  -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    
+   
+    <script src="static/js/plugins.min.js"></script>
+    <script src="static/js/scripts.js"></script>
+
+    
+<script>
+    // notify styling
+    $.notify.addStyle('added', {
+        html: "<div><span data-notify-text/></div>",
+        classes: {
+            base: {
+                "background-color": "#2c2c2c",
+
+            },
+            addStyle: {
+                "color": "white",
+                "background-color": "#2c2c2c"
+            }
+        }
+    });
+
+    $('#video-main-page').simpleLightbox();
+
+
+</script>
+    
+</body>
+</html>
